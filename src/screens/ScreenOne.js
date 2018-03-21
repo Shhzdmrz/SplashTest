@@ -21,7 +21,7 @@ class ScreenOne extends Component {
         const { one, incrementValue, decrementValue, resetValue } = this.props;
         return(
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <Text style={{ fontSize: 30 }}>Screen One</Text>
+                <Text style={{ fontSize: 30 }}>Counter</Text>
                 <Text style={{ fontSize: 32}}>{one.values}</Text>
                 <View style={{ flexDirection: 'row' }}>
                     <TouchableOpacity style={{ justifyContent: 'center', width: 70, height: 50, borderColor: 'white', borderWidth: 2, backgroundColor: 'gray' }} onPress={() => incrementValue()}><Text style={{ color: 'white', fontSize: 20, textAlign: 'center'}}>Add</Text></TouchableOpacity>

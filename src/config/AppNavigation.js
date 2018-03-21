@@ -8,7 +8,7 @@ const screenNav = {
     ScreenOne:{
       screen: ScreenOne,
       navigationOptions: {
-        headerTitle: "Test Screen",
+        headerTitle: "Splash Test",
       } 
     }
 };

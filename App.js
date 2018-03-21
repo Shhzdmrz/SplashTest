@@ -12,6 +12,7 @@ import AppStateLog from './src/lib/AppStateLog';
 const { store, persistor } = storeConfigure();
 
 const onBeforeLift = () => {
+  
 }
 
 export default class App extends Component {
@@ -31,7 +32,7 @@ export default class App extends Component {
                 <AppWithNavigationState style={{ backgroundColor: '#437F82' }} />
                 <PushController />
                 <AppStateLog />
-            </View>
+              </View>
           </PersistGate>
         </Provider>
       ); 
