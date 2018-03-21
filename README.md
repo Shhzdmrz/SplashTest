@@ -8,12 +8,12 @@ React Native splash test repo to figure out the issue with react navigation.
 2. run `yarn install` inside the repo
 3. start app `react-native run-android`
 
-#Generate Issue
+## Generate Issue
 
 1. Open app and click on notify button(it will generate the local notification)
 2. Click on the notification and you'll see the splash showing again and screen again mounted which you can clearly see on back button press.
 
-##Solution
+## Solution
 To resolve this issue changing the **launch mode for Main Activity** 
 See **AndroidManifest.xml** `android:launchMode="singleTask"`. As react navigation is handled by Main Activity so I added launchMode as singleTask to avoid launching same activity again.
 
